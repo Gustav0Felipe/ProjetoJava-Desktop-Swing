@@ -1,0 +1,29 @@
+url=jdbc:mysql://localhost:3306/loja
+usuario=root
+senha=1234
+
+autenticar.funcionario=call pd_user_func(?, ?);
+autenticar.admin=call pd_user_admin(?, ?);
+
+historico.login.iniciar=call pd_iniciou_sessao(?, ?, ?);
+historico.login.fechar=call pd_finalizou_sessao(?);
+
+cadastro.cliente=call pd_cadastro_cliente(?, ?, ?, ?, ?);
+cadastro.produtos=call pd_cadastro_produto(?, ?, ?, ?, ?);
+cadastro.funcionario=call pd_cadastro_funcionario(?, ? , ?, ?, ?, ?);
+cadastro.usuario.sistema=call pd_cadastro_usuario_sistema(?, ?, ?);
+
+listar.produto=select * from view_produtos;
+listar.cliente=select * from view_clientes;
+listar.pedido=select * from view_pedidos;
+listar.funcionario= select * from view_funcionarios;
+
+subir.pedido=call pd_subir_pedido(?, ?, ?);
+subir.pedido.itens=call pd_subir_pedido_itens(?, ? , ?);
+
+subir.encomenda=call pd_subir_encomenda(?, ?, ?);
+subir.encomenda.itens=call pd_subir_encomenda_itens(?, ? , ?);
+
+finalizar.encomenda=call pd_finalizar_encomenda(?);
+
+emitir.relatorio=call pd_emitir_relatorio(?, ?);
