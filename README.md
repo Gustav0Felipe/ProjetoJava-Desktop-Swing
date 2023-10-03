@@ -1,7 +1,7 @@
 # ProjetoJava-Desktop-Swing
 Primeiro projeto que fiz para meu portfólio Java Backend, é uma aplicação desktop usando Swing para gerenciamento de uma loja.
 
-Criei um banco de dados para a loja, todas as interações do sistema com o banco de dados são feitas atraves de Procedures ou Views, assim não teria como quem usa o sistema saber o nome real de nada presente no banco de dados, fiz triggers que monitoram cada loggin e operação do funcionario e uma Trigger que toda vez que um pedido for feito a quantidade de produtos restantes vai ser atualizada.
+Criei um banco de dados para a loja, todas as interações do sistema com o banco de dados são feitas atraves de Procedures ou Views, assim não teria como quem usa o sistema saber o nome real de nada presente no banco de dados, fiz triggers que monitoram cada login e cliente cadastrado do funcionario e uma Trigger que toda vez que um pedido for feito a quantidade de produtos restantes vai ser atualizada.
 
 
 Dependendo de quem loga(Operador ou Gerente) as funcionalidades disponiveis diferem.
