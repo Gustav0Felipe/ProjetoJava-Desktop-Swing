@@ -10,6 +10,8 @@ Na tabela de Pedidos_Produtos tem 2 Triggers, uma que toda vez que um pedido for
 
 Dependendo de quem loga(Operador ou Gerente) as funcionalidades disponiveis diferem.
 
+Validações feitas em cada funcionalidade, não é possivel enviar nulos ou digitar valores incorretos, como exemplo ao cadastrar um novo cliente não é possivel digitar nada alem de letras no nome.
+
 ## Funcionalidades Operador:
 
 Cadastrar Cliente - Cadastra os dados do cliente no banco de dados da loja.
